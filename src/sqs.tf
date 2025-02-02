@@ -6,9 +6,6 @@ module "process-video-queue" {
 
   create_dlq = true
 
-  tags = {
-    Environment = "dev"
-  }
 }
 
 module "result-video-queue" {
@@ -19,8 +16,5 @@ module "result-video-queue" {
 
   create_dlq = true
 
-  tags = {
-    Environment = "dev"
-  }
 }
 
